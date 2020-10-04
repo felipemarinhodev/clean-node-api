@@ -1,6 +1,6 @@
 module.exports = {
   mongodbMemoryServerOptions: {
-    instace: {
+    instance: {
       dbName: 'jest'
     },
     binary: {
