@@ -9,6 +9,7 @@ import {
   Authentication
 } from './login-protocols'
 import {
+  ok,
   badRequest,
   serverError,
   unauthorized
@@ -122,5 +123,11 @@ describe('Login controller', () => {
       (resolve, reject) => reject(new Error())))
     const httpResponse = await sut.handle(makeFakeRequest())
     expect(httpResponse).toEqual(serverError(new Error()))
+  })
+
+  test('Should return 200 if valid credentials are provider', async () => {
+    const { sut } = makeSut()
+    const httpResponse = await sut.handle(makeFakeRequest())
+    expect(httpResponse).toEqual(ok({ accessToken: 'any_token' }))
   })
 })
