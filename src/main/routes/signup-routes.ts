@@ -1,4 +1,4 @@
-import { makeSignUpController } from '../factories/signup'
+import { makeSignUpController } from '../factories/signup/signup'
 import { adaptRoute } from '../adapters/express-route-adapter'
 import { Router } from 'express'
 
