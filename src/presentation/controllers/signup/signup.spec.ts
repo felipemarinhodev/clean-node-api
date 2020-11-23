@@ -14,7 +14,7 @@ import {
   ok,
   badRequest,
   serverError
-} from '../../helpers/http-helper'
+} from '../../helpers/http/http-helper'
 
 const makeAddAccount = (): AddAccount => {
   class AddAccountStub implements AddAccount {

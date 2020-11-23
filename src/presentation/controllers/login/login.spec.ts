@@ -12,7 +12,7 @@ import {
   badRequest,
   serverError,
   unauthorized
-} from './../../helpers/http-helper'
+} from './../../helpers/http/http-helper'
 
 const makeAuthentication = (): Authentication => {
   class AuthenticationStub implements Authentication {

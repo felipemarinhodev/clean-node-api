@@ -2,7 +2,7 @@ import {
   badRequest,
   serverError,
   ok
-} from '../../helpers/http-helper'
+} from '../../helpers/http/http-helper'
 import {
   HttpRequest,
   HttpResponse,
