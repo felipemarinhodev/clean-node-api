@@ -1,4 +1,4 @@
-import { LoginController } from './login'
+import { LoginController } from './login-controller'
 import {
   MissingParamError
 } from '../../errors'
@@ -6,7 +6,7 @@ import {
   HttpRequest,
   Authentication,
   Validation
-} from './login-protocols'
+} from './login-controller-protocols'
 import {
   ok,
   badRequest,

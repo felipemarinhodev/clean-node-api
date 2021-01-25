@@ -8,12 +8,12 @@ import {
 } from '../../helpers/http/http-helper'
 import { HttpRequest } from '../../protocols/http'
 import { Validation } from './../../protocols/validation'
-import { SignUpController } from './signup'
+import { SignUpController } from './signup-controller'
 import {
   AccountModel,
   AddAccount,
   AddAccountModel
-} from './signup-protocols'
+} from './signup-controller-protocols'
 
 const makeAddAccount = (): AddAccount => {
   class AddAccountStub implements AddAccount {
